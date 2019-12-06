@@ -19,11 +19,17 @@ autovaloriA1 = eig(A1)
 autovaloriA2 = eig(A2)
 autovaloriA3 = eig(A3)
 
+disp("Matrice A1 - 30 imax");
 [T, Q] = metodoQRGivens(hess(A1), 30)
+disp("Matrice A1 - 60 imax");
 [T, Q] = metodoQRGivens(hess(A1), 60)
 
+disp("Matrice A2 - 30 imax");
 [T, Q] = metodoQRGivens(hess(A2), 30)
+disp("Matrice A2 - 60 imax");
 [T, Q] = metodoQRGivens(hess(A2), 60)
 
+disp("Matrice A3 - 30 imax");
 [T, Q] = metodoQRGivens(hess(A3), 30)
+disp("Matrice A3 - 60 imax");
 [T, Q] = metodoQRGivens(hess(A3), 60)

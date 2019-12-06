@@ -7,8 +7,8 @@ function [T, Q] = metodoQRGivens(A, imax)
         for j=1:n-1
             G = givens(T,n,j);
             Q = G*Q;
-            T = G'*T;
-            T = T*G;
+            T = givensMultiplicationTrasp(G', T, j);
+            T = givensMultiplication(G, T, j);
         end
     end
 end
