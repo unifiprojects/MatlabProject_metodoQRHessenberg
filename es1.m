@@ -6,5 +6,5 @@ A = [4 3 2 1
      1 2 3 4];
  
 [T, Q] = metodoQRGivens(hess(A), 1000)
-eig(A)
-schur(A)
+autovalori = eig(A)
+schur = schur(A)
